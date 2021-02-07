@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="site-wrap">
+    <header class="site-navbar" role="banner">
+        <div class="site-navbar-top">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-8 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                        <form action="" class="site-block-top-search">
+                            <div class="row">
+
+                                <input type="text" class="form-control col-lg-5 col-md-4 col-sm-3" placeholder="Search" id="inputsearch">
+                                <div class="text-center col-lg-4 col-md-3 col-sm-2"><div class="btn btn-secondary btn-sm" onclick="search()">搜索</div></div>
+
+                                <!--                                <div class="form-control border-0" onclick="search()">搜索</div>-->
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                        <div class="site-logo">
+                            <a href="Index.html" class="js-logo-clone">Shoes Shop</a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                        <div class="site-top-icons">
+                            <ul>
+                                <li><span class="icon icon-person mt-1"></span></li>
+                                <li><a href="login.html"><span style="font-size: 4px" class="mb-lg-2">登录</span></a></li>
+
+                                <li><span class="icon icon-person mt-1"></span></li>
+                                <li><a href="Register.html"><span style="font-size: 4px" class="mb-lg-2">注册</span></a></li>
+
+
+                                <li>
+                                    <div id="gou">
+                                        <a href="" class="site-cart">
+                                            <span class="icon icon-shopping_cart"></span>
+                                            <span style="font-size: 4px" class="mb-lg-2">购物车</span>
+
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="site-navigation text-right text-md-center" role="navigation">
+            <div class="container">
+                <ul class="site-menu js-clone-nav d-none d-md-block align-content-center">
+                    <li class="has-children active">
+                        <a href="index.html">主页</a>
+                        <ul class="dropdown">
+                            <li><a href="#">男鞋</a></li>
+                            <li><a href="#">女鞋</a></li>
+                            <li><a href="#">童鞋</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">旗下商铺</a></li>
+                    <li><a href="#">鞋子列表</a></li>
+                    <li><a href="#">新品来袭</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<div>
+    <!--    筛选框-->
+    <div class="container">
+        <div class="row">
+            <div class="col-12" >
+                <button style="float: left" class="btn btn-secondary  btn-md dropdown-toggle " data-target="#demo" data-toggle="collapse">
+                    筛选
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="demo"class="collapse">
+        <div class="container  font-weight-light border"  >
+            <!--        品牌开始-->
+            <div class="row p-2 border-bottom"  >
+                <div class="col-2 float-left">品牌:</div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">ANTA/安踏  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">XTEP特步  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">回力  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">耐克  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">乔丹  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">阿迪达斯  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">李宁  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">erke/鸿星尔克  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">361°  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">New Balance  </a>
+                </div>
+            </div>
+            <!--        品牌结束        -->
+
+            <!--        鞋码开始-->
+            <div class="row p-2 border-bottom" >
+                <div class="col-2 float-left">鞋码:</div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">11cm以下  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">12码/11cm  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">13码/11.5cm  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">14码/12cm  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">15码/12.5cm  </a>
+                </div>
+            </div>
+            <!--        鞋码结束-->
+
+            <!--        功能开始-->
+            <div class="row p-2 " >
+                <div class="col-2 float-left">功能:</div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">耐磨  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">轻便  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">减震  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">防滑  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">透气  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">支撑  </a>
+                </div>
+                <div class="col-2 float-left">
+                    <a href="" style="text-decoration: none;color: #1b1e21">包裹性  </a>
+                </div>
+            </div>
+            <!--        功能结束-->
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <!--        胶囊导航开始-->
+            <ul class="nav nav-tabs nav-pills">
+                <li class="nav-item"><a href="#tab1" data-toggle="pill" class="nav-link active" id="comprehensive">综合排序</a></li>
+                <li class="nav-item"><a href="#tab2" data-toggle="pill" class="nav-link" id="sales_volume">销量</a></li>
+                <li class="nav-item"><a href="#tab3" data-toggle="pill" class="nav-link" id="evaluate">评价</a></li>
+                <li class="nav-item"><a href="#tab4" data-toggle="pill" class="nav-link" id="price">价格</a></li>
+            </ul>
+        </div>
+        <div class="row ">
+            <div class="tab-content">
+                <div id="tab1" class="tab-pane active">
+                    <div class="conatiner" >
+                        <div class="row  border " id="goods">
+                            <!--                                <div class="">-->
+                            <!--                                    <img src="img/1.png" />-->
+                            <!--                                </div>-->
+                            <!--                                <div class="row ">-->
+                            <!--                                    <div class="  text-center ">-->
+                            <!--                                        <h3>-->
+                            <!--                                            <a href="" style="text-decoration: none;color: #1b1e21">阿迪达斯adidas跑步鞋</a>-->
+                            <!--                                        </h3>-->
+                            <!--                                        <p class="mb-0">adidas官方旗舰店</p>-->
+                            <!--                                        <p class=" font-weight-bold" style="color: #7971EA">￥200元</p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-pane ">
+                    <div class="conatiner">
+                        <div class="row  border" id="goods1">
+                            <!--                                <div class="">-->
+                            <!--                                    <img src="img/1.png" />-->
+                            <!--                                </div>-->
+                            <!--                                <div class="row ">-->
+                            <!--                                    <div class="  text-center ">-->
+                            <!--                                        <h3>-->
+                            <!--                                            <a href="" style="text-decoration: none;color: #1b1e21">阿迪达斯adidas跑步鞋</a>-->
+                            <!--                                        </h3>-->
+                            <!--                                        <p class="mb-0">adidas官方旗舰店</p>-->
+                            <!--                                        <p class="text-primary font-weight-bold">￥200元</p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-pane ">
+                    <div class="conatiner">
+                        <div class="row  border" id="goods2">
+                            <!--                                <div class="">-->
+                            <!--                                    <img src="img/1.png" />-->
+                            <!--                                </div>-->
+                            <!--                                <div class="row ">-->
+                            <!--                                    <div class="  text-center ">-->
+                            <!--                                        <h3>-->
+                            <!--                                            <a href="" style="text-decoration: none;color: #1b1e21">阿迪达斯adidas跑步鞋</a>-->
+                            <!--                                        </h3>-->
+                            <!--                                        <p class="mb-0">adidas官方旗舰店</p>-->
+                            <!--                                        <p class="text-primary font-weight-bold">￥200元</p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-pane ">
+                    <div class="conatiner">
+                        <div class="row  border" id="goods3">
+                            <!--                                <div class="">-->
+                            <!--                                    <img src="img/1.png" />-->
+                            <!--                                </div>-->
+                            <!--                                <div class="row ">-->
+                            <!--                                    <div class="  text-center ">-->
+                            <!--                                        <h3>-->
+                            <!--                                            <a href="" style="text-decoration: none;color: #1b1e21">阿迪达斯adidas跑步鞋</a>-->
+                            <!--                                        </h3>-->
+                            <!--                                        <p class="mb-0">adidas官方旗舰店</p>-->
+                            <!--                                        <p class="text-primary font-weight-bold">￥200元</p>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--胶囊导航结束-->
+
+
+    </div>
+
+    <footer class="site-footer border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="block-5 mb-5">
+                        <h3 class="footer-heading mb-4">联系我们</h3>
+                        <ul class="list-unstyled">
+                            <li class="address">广东省佛山市南海区华南师范大学</li>
+                            <li class="phone"><a href="#">123 456 789</a></li>
+                            <li class="email">scnuss@scnu.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="block-7">
+                        <form action="#" method="post">
+                            <label for="email_subscribe" class="footer-heading">提交</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                                <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+
+                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>SCNUSS</a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+<script>
+    $(window).load(function () {
+        let pname=decodeURI(location.href).split('=')[1];
+        let uname=decodeURI(location.href).split('=')[3];
+        $.ajax({
+            method:'GET',
+            url:'http://localhost:5050/product/search?pname='+pname,
+            success:function (data) {
+               // uname=uname;
+                console.log('异步请求成功')
+                let html=''
+                for(let i=0;i<data.length;i++)
+                {
+                    html+=
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <img src="img/${data[i].img}" />\n` +
+                        `                                </div>\n` +
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <div class="  text-center ">\n` +
+                        `                                        <h3>\n` +
+                        `                                            <a href="./detail.html?uid=${data[i].uid}=uname=${uname}" style="text-decoration: none;color: #1b1e21">${data[i].name}</a>\n` +
+                        `                                        </h3>\n` +
+                        `                                        <p class="mb-0">adidas官方旗舰店</p>\n` +
+                        `                                        <p class=" font-weight-bold" style="color: #7971EA">￥${data[i].price}元</p>\n` +
+                        `                                    </div>\n` +
+                        `                                </div>\n`
+
+                }
+                $('#goods').html(html)
+
+
+            }
+        })
+    })
+
+    $('#sales_volume').click(function (pname) {
+        $.ajax({
+            method:'GET',
+            // url:'http://localhost:5050/product/sortsell?sortsell=1&pname='+pname,
+            url:'http://localhost:5050/product/sortsell?sortsell=1&pname=Adidas',
+            success:function (data) {
+                console.log('异步请求成功')
+                let html=''
+                // console.log(data)
+                for(let i=0;i<data.length;i++)
+                {
+                    html+=
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <img src="img/${data[i].img}" />\n` +
+                        `                                </div>\n` +
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <div class="  text-center ">\n` +
+                        `                                        <h3>\n` +
+                        `                                            <a href="" style="text-decoration: none;color: #1b1e21">${data[i].name}</a>\n` +
+                        `                                        </h3>\n` +
+                        `                                        <p class="mb-0">adidas官方旗舰店</p>\n` +
+                        `                                        <p class=" font-weight-bold" style="color: #7971EA">￥${data[i].price}元</p>\n` +
+                        `                                    </div>\n` +
+                        `                                </div>\n`
+
+                }
+                // console.log(html)
+                $('#goods1').html(html)
+            }
+
+
+        })
+    })
+    $('#evaluate').click(function (pname) {
+        $.ajax({
+            method:'GET',
+            url:'http://localhost:5050/product/sortscore?sortscore=1&pname=Adidas',
+            success:function (data) {
+                console.log('异步请求成功')
+                let html=''
+                // console.log(data)
+                for(let i=0;i<data.length;i++)
+                {
+                    html+=
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <img src="img/${data[i].img}" />\n` +
+                        `                                </div>\n` +
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <div class="  text-center ">\n` +
+                        `                                        <h3>\n` +
+                        `                                            <a href="" style="text-decoration: none;color: #1b1e21">${data[i].name}</a>\n` +
+                        `                                        </h3>\n` +
+                        `                                        <p class="mb-0">adidas官方旗舰店</p>\n` +
+                        `                                        <p class=" font-weight-bold" style="color: #7971EA">￥${data[i].price}元</p>\n` +
+                        `                                    </div>\n` +
+                        `                                </div>\n`
+
+                }
+                // console.log(html)
+                $('#goods2').html(html)
+            }
+
+
+        })
+    })
+
+    $('#price').click(function (pname) {
+        $.ajax({
+            method:'GET',
+            url:'http://localhost:5050/product/sortprice?sortprice=1&pname=Adidas',
+            success:function (data) {
+                console.log('异步请求成功')
+                let html=''
+                // console.log(data)
+                for(let i=0;i<data.length;i++)
+                {
+                    html+=
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <img src="img/${data[i].img}" />\n` +
+                        `                                </div>\n` +
+                        `                                <div class="col-6 border-bottom p-5">\n` +
+                        `                                    <div class="  text-center ">\n` +
+                        `                                        <h3>\n` +
+                        `                                            <a href="" style="text-decoration: none;color: #1b1e21">${data[i].name}</a>\n` +
+                        `                                        </h3>\n` +
+                        `                                        <p class="mb-0">adidas官方旗舰店</p>\n` +
+                        `                                        <p class=" font-weight-bold" style="color: #7971EA">￥${data[i].price}元</p>\n` +
+                        `                                    </div>\n` +
+                        `                                </div>\n`
+                }
+                // console.log(html)
+                $('#goods3').html(html)
+            }
+        })
+    })
+</script>
+</body>
+</html>

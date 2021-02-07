@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Detail</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-navbar" role="banner">
+  <div class="site-navbar-top">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-8 col-md-4 order-2 order-md-1 site-search-icon text-left">
+          <form action="" class="site-block-top-search">
+            <div class="row">
+
+              <input type="text" class="form-control col-lg-5 col-md-4 col-sm-3" placeholder="Search" id="inputsearch">
+              <div class="text-center col-lg-4 col-md-3 col-sm-2"><div class="btn btn-secondary btn-sm" onclick="search()">搜索</div></div>
+
+              <!--                                <div class="form-control border-0" onclick="search()">搜索</div>-->
+            </div>
+
+          </form>
+        </div>
+
+        <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+          <div class="site-logo">
+            <a href="Index.html" class="js-logo-clone">Shoes Shop</a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+          <div class="site-top-icons">
+            <ul>
+              <li><span class="icon icon-person mt-1"></span></li>
+              <li><a href="login.html"><span style="font-size: 4px" class="mb-lg-2">登录</span></a></li>
+
+              <li><span class="icon icon-person mt-1"></span></li>
+              <li><a href="Register.html"><span style="font-size: 4px" class="mb-lg-2">注册</span></a></li>
+
+
+              <li>
+                <div id="gou">
+                  <a href="" class="site-cart">
+                    <span class="icon icon-shopping_cart"></span>
+                    <span style="font-size: 4px" class="mb-lg-2">购物车</span>
+
+                  </a>
+                </div>
+              </li>
+              <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <nav class="site-navigation text-right text-md-center" role="navigation">
+    <div class="container">
+      <ul class="site-menu js-clone-nav d-none d-md-block align-content-center">
+        <li class="has-children active">
+          <a href="index.html">主页</a>
+          <ul class="dropdown">
+            <li><a href="#">男鞋</a></li>
+            <li><a href="#">女鞋</a></li>
+            <li><a href="#">童鞋</a></li>
+          </ul>
+        </li>
+        <li><a href="#">旗下商铺</a></li>
+        <li><a href="#">鞋子列表</a></li>
+        <li><a href="#">新品来袭</a></li>
+        <li><a href="#">联系我们</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="site-wrap">
+  <div class="site-section">
+    <div class="container">
+      <div class="row" id="good">
+        <!--          <div class="col-md-6 text-center">-->
+        <!--            <img src="img/1.png" alt="Image" class="img-fluid">-->
+        <!--          </div>-->
+        <!--          <div class="col-md-6">-->
+        <!--            <h2 class="text-black">阿迪达斯adidas跑步鞋</h2>-->
+        <!--            <p>这是一双好鞋子呀</p>-->
+        <!--            <p class="mb-4">Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum hic magni iste, velit aperiam quis.</p>-->
+        <!--            <p><strong class="text-primary h4">￥200</strong></p>-->
+        <!--            <div class="mb-1 d-flex">-->
+        <!--              <label for="option-sm" class="d-flex mr-3 mb-3">-->
+        <!--                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">S</span>-->
+        <!--              </label>-->
+        <!--              <label for="option-md" class="d-flex mr-3 mb-3">-->
+        <!--                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-md" name="shop-sizes"></span> <span class="d-inline-block text-black">M</span>-->
+        <!--              </label>-->
+        <!--              <label for="option-lg" class="d-flex mr-3 mb-3">-->
+        <!--                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-lg" name="shop-sizes"></span> <span class="d-inline-block text-black">L</span>-->
+        <!--              </label>-->
+        <!--              <label for="option-xl" class="d-flex mr-3 mb-3">-->
+        <!--                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black">XL</span>-->
+        <!--              </label>-->
+        <!--            </div>-->
+        <div class="mb-5">
+          <div class="input-group mb-3" style="max-width: 120px;">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-primary js-btn-minus" type="button">&minus;</button>
+            </div>
+            <input type="text" class="form-control text-center" value="1" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <div class="input-group-append">
+              <button class="btn btn-outline-primary js-btn-plus" type="button">&plus;</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <a href="dingdan.html" class="buy-now btn btn-sm btn-primary">立即购买</a>
+        <a href="" id="wu" class="buy-now btn btn-sm btn-primary">加入购物车</a>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="site-section block-3 site-blocks-2 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-7 site-section-heading text-center pt-4">
+        <h2>猜你喜欢</h2>
+      </div>
+    </div>
+    <div class="row" id="like">
+      <div class="col-md-12">
+        <div class="nonloop-block-3 owl-carousel" >
+
+          <!--              <div class="item">-->
+          <!--                <div class="block-4 text-center">-->
+          <!--                  <figure class="block-4-image">-->
+          <!--                    <img src="img/1.png" alt="Image placeholder" class="img-fluid">-->
+          <!--                  </figure>-->
+          <!--                  <div class="block-4-text p-4">-->
+          <!--                    <h3><a href="#">阿迪达斯</a></h3>-->
+          <!--                    <p class="mb-0">good shoes</p>-->
+          <!--                    <p class="text-primary font-weight-bold">￥50</p>-->
+          <!--                  </div>-->
+          <!--                </div>-->
+          <!--              </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+<script>
+  $(window).load(function () {
+    console.log('输出url')
+    console.log(decodeURI(location.href))
+    let uid = decodeURI(location.href).split('=')[1];
+    $.ajax({
+      method:'GET',
+      url:'http://localhost:5050/product/detail?uid='+uid,
+      success:function (data) {
+        console.log(data)
+        console.log('异步请求成功')
+        let html=``
+        html+=`          <div class="col-md-6 text-center">
+            <img src="img/${data[0].img}" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-6">
+            <h2 class="text-black">${data[0].name}</h2>
+            <p>这是一双好鞋子呀</p>
+            <p class="mb-4">Ex numquam veritatis debitis minima quo error quam eos dolorum quidem perferendis. Quos repellat dignissimos minus, eveniet nam voluptatibus molestias omnis reiciendis perspiciatis illum hic magni iste, velit aperiam quis.</p>
+            <p><strong class="text-primary h4">￥${data[0].price}</strong></p>
+            <div class="mb-1 d-flex">
+              <label for="option-sm" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-sm" name="shop-sizes"></span> <span class="d-inline-block text-black">S</span>
+              </label>
+              <label for="option-md" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-md" name="shop-sizes"></span> <span class="d-inline-block text-black">M</span>
+              </label>
+              <label for="option-lg" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-lg" name="shop-sizes"></span> <span class="d-inline-block text-black">L</span>
+              </label>
+              <label for="option-xl" class="d-flex mr-3 mb-3">
+                <span class="d-inline-block mr-2" style="top:-2px; position: relative;"><input type="radio" id="option-xl" name="shop-sizes"></span> <span class="d-inline-block text-black">XL</span>
+              </label>
+            </div>`
+
+        $('#good').html(html)
+
+
+      }
+    })
+    $.ajax({
+      method: 'GET',
+      url:'http://localhost:5050/product/random',
+      success:function (data) {
+        let html=''
+        console.log('这是data')
+        console.log(data)
+        for(let i=0;i<data.length;i++)
+        {
+          html+= `<div class="item col-4">
+                <div class="block-4 text-center" >
+                  <figure class="block-4-image">
+                    <img src="img/${data[i].img}" alt="Image placeholder" class="img-fluid">
+                  </figure>
+                  <div class="block-4-text p-4">
+                    <h3><a href="./detail.html?uid=${data[i].uid}">${data[i].name}</a></h3>
+                    <p class="mb-0">good shoes</p>
+                    <p class="text-primary font-weight-bold">￥${data[i].price}</p>
+                  </div>
+                </div>
+              </div>`
+
+        }
+        console.log(html)
+        $('#like').html(html)
+
+      }
+    })
+  })
+$('#wu').click(function() {
+    console.log(1)
+    let uid = decodeURI(location.href).split('=')[1];
+    let pname = decodeURI(location.href).split('=')[3];
+    console.log(uid)
+    console.log(pname)
+    $.ajax({
+      method:'GET',
+      url:'http://localhost:5050/cart/single?uid='+uid+'&uname='+pname,
+      dataType:'json',
+      success:function (data) {
+        console.log(data);
+        window.location.href='cart.html?pname='+pname;
+      }
+    })
+  alert('加入购物车成功');
+})
+
+
+</script>
+</html>

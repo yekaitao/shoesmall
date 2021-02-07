@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表</title>
+</head>
+<h1>全部商品(只展示1件)</h1>
+<div class="search-all"></div>
+<hr/>
+<h1>用户注册</h1>
+<form method="post" action="/user/reg">
+    用户名:<input type="text" name="uname"><br/>
+    邮箱：<input type="text" name="uemail"/><br/>
+    密码：<input type="password" name="upwd"/><br/>
+    <input type="submit" value="注册"/>
+</form>
+<hr/>
+<h1>用户登录</h1>
+<form method="post" action="/user/login">
+    用户名:<input type="text" name="username"><br/>
+    密码:<input type="password" name="userpwd">
+    <input type="submit" value="登录">
+</form>
+<hr/>
+<h1>用户是否已登录</h1>
+<div class="chk-login"></div>
+<button onclick="checkLog()">看看有没有用户登录"</button>
+<div class="logout"></div>
+<button onclick="logout()">退出登录</button>
+<input type="text" id="check-who"/>
+<button onclick="isUserLog()">看看这个用户有没有在登录</button>
+<div class="display-who"></div>
+<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+<script src="js/jquery.js"></script>
+<script>
+    $(window).load(function(){
+        $.ajax({
+            method:'GET',
+            url:'http://127.0.0.1:5050/product/getall',
+            success:function (data) {
+                let html = ''
+                let cnt = 0;
+                for(let i in data){
+                    //html += ("<div><img src='image/"+data[i].img+"'}></div>");
+                    html += `<div>
+                                <img src="image/${data[i].img}">
+                                商品id:${data[i].uid}<br/>
+                                名称:${data[i].name}<br/>
+                                价格:¥${data[i].price}<br/>
+                                说明:${data[i].shuoming}<br/>
+                             </div>`
+                    break;
+                }
+                $('.search-all').html(html)
+            }
+        })
+    })
+
+    // function checkLog(){
+    //     $.ajax({
+    //         method:'POST',
+    //         url:'http://localhost:5050/user/wholog',
+    //         success:function (data) {
+    //             console.log(data);
+    //             if(data.code==342){
+    //                 $('.chk-login').html("用户:"+data.msg+"已登录");
+    //             }else{
+    //                 $('.chk-login').html("没有用户登录");
+    //             }
+    //         }
+    //     })
+    // }
+    // function logout(){
+    //     $.ajax({
+    //         method:'POST',
+    //         url:'http://localhost:5050/user/logout',
+    //         success:function (data) {
+    //             if(data.code==351){
+    //                 $('.logout').html(data.msg);
+    //             }else{
+    //                 $('.logout').html("退出登录失败");
+    //             }
+    //         }
+    //     })
+    // }
+    // function isUserLog(){
+    //     $.ajax({
+    //         method:'POST',
+    //         url:'http://localhost:5050/user/islog',
+    //         success:function (data) {
+    //             $('.display-who').html(data.msg);
+    //         }
+    //     })
+    // }
+</script>
+</body>
+</html>

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车界面</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+    <style>
+        .bg{
+            /*background-color: #dddddd;*/
+        }
+    </style>
+</head>
+<body class="bg">
+
+<div class="site-wrap">
+    <header class="site-navbar" role="banner">
+        <div class="site-navbar-top">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-8 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                        <form action="" class="site-block-top-search">
+                            <div class="row">
+
+                                <input type="text" class="form-control col-lg-5 col-md-4 col-sm-3" placeholder="Search" id="inputsearch">
+                                <div class="text-center col-lg-4 col-md-3 col-sm-2"><div class="btn btn-secondary btn-sm" onclick="search()">搜索</div></div>
+
+                                <!--                                <div class="form-control border-0" onclick="search()">搜索</div>-->
+                            </div>
+
+                        </form>
+                    </div>
+
+                    <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                        <div class="site-logo">
+                            <a href="Index.html" class="js-logo-clone">Shoes Shop</a>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                        <div class="site-top-icons">
+                            <ul>
+                                <li><span class="icon icon-person mt-1"></span></li>
+                                <li><a href="login.html"><span style="font-size: 4px" class="mb-lg-2">登录</span></a></li>
+
+                                <li><span class="icon icon-person mt-1"></span></li>
+                                <li><a href="Register.html"><span style="font-size: 4px" class="mb-lg-2">注册</span></a></li>
+
+
+                                <li>
+                                    <div id="gou">
+                                        <a href="" class="site-cart">
+                                            <span class="icon icon-shopping_cart"></span>
+                                            <span style="font-size: 4px" class="mb-lg-2">购物车</span>
+
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="site-navigation text-right text-md-center" role="navigation">
+            <div class="container">
+                <ul class="site-menu js-clone-nav d-none d-md-block align-content-center">
+                    <li class="has-children active">
+                        <a href="index.html">主页</a>
+                        <ul class="dropdown">
+                            <li><a href="#">男鞋</a></li>
+                            <li><a href="#">女鞋</a></li>
+                            <li><a href="#">童鞋</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">旗下商铺</a></li>
+                    <li><a href="#">鞋子列表</a></li>
+                    <li><a href="#">新品来袭</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="site-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <h3>SHOPPING CART</h3>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <form class="col-md-12" method="" action="">
+                    <div class="site-blocks-table">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th class="product-thumbnail">Image</th>
+                                    <th class="product-thumbnail">name</th>
+                                    <th class="product-thumbnail">Price</th>
+                                    <th class="product-thumbnail">num</th>
+                                    <th class="product-thumbnail">Total</th>
+                                    <th class="product-thumbnail">Remove</th>
+                                </tr>
+                            </thead>
+                            <tbody id="cartlesson">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 text-right border-bottom mb-5">
+                        <h3 class="text-black h4 text-uppercase">Cart Totals</h3>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-9 text-right">
+                        <span class="text-black">Subtotal</span>
+                    </div>
+                    <div class="col-md-3 text-right" id="carttotal">
+
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-md-9 text-right">
+                        <span class="text-black">Total</span>
+                    </div>
+                    <div class="col-md-3 text-right" id="carttotal1">
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label class="text-black h4" for="coupon">优惠劵</label>
+                                <p>如果你有优惠劵，请输入优惠劵号</p>
+                            </div>
+                            <div class="col-md-8 mb-3 mb-md-0">
+                                <input type="text" class="form-control py-3" id="coupon" placeholder="优惠劵号">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-primary btn-sm">确定</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <button class="btn btn-info btn-sm py-3 btn-block" onclick="window.location='index.html'">Continue to shopping</button>
+                        <button class="btn btn-warning btn-sm py-3 btn-block" onclick="checkout()">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer border-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="block-5 mb-5">
+                        <h3 class="footer-heading mb-4">联系我们</h3>
+                        <ul class="list-unstyled">
+                            <li class="address">广东省佛山市南海区华南师范大学</li>
+                            <li class="phone"><a href="#">123 456 789</a></li>
+                            <li class="email">scnuss@scnu.com</li>
+                        </ul>
+                    </div>
+
+                    <div class="block-7">
+                        <form action="#" method="post">
+                            <label for="email_subscribe" class="footer-heading">提交</label>
+                            <div class="form-group">
+                                <input type="text" class="form-control py-4" id="email_subscribe" placeholder="Email">
+                                <input type="submit" class="btn btn-sm btn-primary" value="Send">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 mt-5 text-center">
+                <div class="col-md-12">
+                    <p>
+
+                        Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>SCNUSS</a>
+
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        let lis
+        let Adata
+        $(window).load(function(){
+            let uname = decodeURI(location.href).split('=')[1];
+            $.ajax({
+                method:'POST',
+                url:'http://127.0.0.1:5050/cart/schnot',
+                data:`uname=${uname}`,
+                success:function(data){
+                    Adata=data
+                    let htmlcart = ''
+                    let total = 0
+                    lis=data.length
+                    console.log('异步请求成功')
+                    for(let i = 0;i<data.length;i++){
+                        htmlcart +=
+                            `<tr>
+                                    <td class="product-thumbnail">
+                                        <img src="img/${data[i].img}" class="img-fluid">
+                                    </td>
+                                    <td class="product-thumbnail">
+                                        <h2 class="h5 text-black">${data[i].name}</h2>
+                                    </td>
+                                    <td>￥${data[i].price}</td>
+                                    <td>
+                                        <div class="input-group mb-3 ml-3" style="max-width: 120px;">
+                                            <div class="input-group-prepend">
+                                                <button class="btn btn-outline-primary js-btn-minus" type="button" onclick="sub(this,${data[i].cartid})">&minus;</button>
+                                            </div>
+                                            <input type="text" class="form-control text-center" value="${data[i].num}" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1" onkeypress="sendnum(this,${data[i].cartid})">
+                                            <div class="input-group-append">
+                                                <button class="btn btn-outline-primary js-btn-plus" type="button" onclick="add(this,${data[i].cartid})">&plus;</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        ￥${data[i].price*data[i].num}
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-danger btn-sm" onclick="del(this,${data[i].cartid})">X</a>
+                                    </td>
+                             </tr>`
+                        total =total+data[i].price*data[i].num
+                    }
+                    $('#cartlesson').html(htmlcart)
+                    let htmltotal = ''
+                    htmltotal +=`
+            <strong class="text-black">￥${total}</strong>`
+                    $('#carttotal').html(htmltotal)
+                    $('#carttotal1').html(htmltotal)
+                }
+            })
+        })
+        function sub(obj,cartid)
+        {
+            var cartid=cartid;
+            $.ajax({
+                method:'POST',
+                url:'http://127.0.0.1:5050/cart/sub',
+                data:`cartid=${cartid}`,
+                success:function(data) {
+                    console.log(data)
+                    window.location.reload();
+                }
+            })
+        }
+        add=function(obj,cartid)
+        {
+            var cartid=cartid;
+            $.ajax({
+                method:'POST',
+                url:'http://127.0.0.1:5050/cart/add',
+                data:`cartid=${cartid}`,
+                success:function(data) {
+                    console.log(data)
+                    window.location.reload();
+                }
+            })
+        }
+        sendnum=function(obj,cartid)
+        {
+            if(event.keyCode==13)
+            {
+                var cartid=cartid;
+                var buynum=obj.value;
+                $.ajax({
+                    method:'POST',
+                    url:'http://localhost:5050/cart/change',
+                    data:{"buynum":buynum,"cartid":cartid},
+                    success:function(data) {
+                        console.log(data)
+                        window.location.reload();
+                    }
+                })
+            }
+        }
+        del=function(obj,cartid)
+        {
+            var parentTr=obj.parentNode.parentNode;
+            var parentTable = parentTr.parentNode;
+            var cartid =cartid;
+            $.ajax({
+                method:"POST",
+                url:"http://localhost:5050/cart/remove",
+                data:`cartid=${cartid}`,
+                success:function(data)
+                {
+                    console.log(data)
+                }
+            })
+            parentTable.removeChild(parentTr);
+            window.location.reload();
+        }
+        function checkout(){
+            console.log(1)
+            let pname = decodeURI(location.href).split('=')[1];
+            console.log(pname);
+            $.ajax({
+                method:'GET',
+                url:'http://localhost:5050/product/search?pname=' +pname,
+                success:function (data) {
+                    console.log(data);
+                    if(data.code==121){
+                        alert("没输入商品名称");
+                    }
+                    else{
+                        window.location.href='dingdan.html?pname='+pname;
+                    }
+
+                }
+            })
+        }
+
+    </script>
+</body>
+</html>
